@@ -116,9 +116,12 @@ body {
     @apply relative z-10 min-h-dvh w-full border border-transparent;
 
     h1 {
-      @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-mono;
+      @apply flex flex-row w-full justify-center items-center mx-auto mt-40 sm:mt-32 text-6xl sm:text-7xl md:text-8xl lg:text-[20vw] leading-none text-center font-mono;
     }
 
+    .hiDiv {
+      @apply flex flex-row;
+    }
     .left-leaf {
       @apply absolute left-0 md:top-20 xl:top-36 2xl:top-52 md:bottom-auto -bottom-20 md:w-fit w-1/3;
     }
