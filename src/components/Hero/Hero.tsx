@@ -109,7 +109,7 @@ const Hero = () => {
                 <h1 className="title">
                     Mo
                     <div className="hiDiv">
-                        hi<div id="comma">,</div>
+                        hi<div id="comma" className="commaDiv">,</div>
                     </div>
                     to
                 </h1>
