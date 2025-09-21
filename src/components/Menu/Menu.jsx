@@ -72,22 +72,6 @@ const Menu = () => {
         y: (value) => Math.round(value / 50) * 50,
         rotation: (value) => Math.round(value / 45) * 45, // snap rotation every 45°
       },
-
-      onPressInit: () => spin.pause(), // pause auto-spin on drag
-      onDrag: function () {
-        setSpinProgress.call(this);
-      },
-      onThrowUpdate: function () {
-        setSpinProgress.call(this);
-      },
-      onThrowComplete: () => {
-        spin.resume();
-        gsap.fromTo(
-          spin,
-          { timeScale: 0 },
-          { timeScale: 1, ease: "power1.in" }
-        );
-      },
     });
 
     // keep spin progress linked to draggable rotation
