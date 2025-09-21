@@ -38,7 +38,7 @@ const NavBar = () => {
         <ul>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={"#&{link.id}"}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
