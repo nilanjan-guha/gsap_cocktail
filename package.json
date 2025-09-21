@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ffmpeg/core": "^0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
     "@gsap/react": "^2.1.2",
+    "ffmpeg": "^0.0.4",
     "gsap": "^3.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
