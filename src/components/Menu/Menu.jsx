@@ -73,11 +73,6 @@ const Menu = () => {
         rotation: (value) => Math.round(value / 45) * 45, // snap rotation every 45°
       },
     });
-
-    // keep spin progress linked to draggable rotation
-    function setSpinProgress() {
-      spin.progress(gsap.utils.wrap(0, 360, this.rotation) / 360);
-    }
   }, [currentIndex]);
 
   const totalCocktails = allCocktails.length;
