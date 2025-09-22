@@ -44,22 +44,19 @@ const Menu = () => {
       }
     );
 
-    const spin = gsap
-      .timeline({ repeat: -1 })
-      .set("#svg-stage", { opacity: 1 })
-      .fromTo(
-        "#clover",
-        {
-          transformOrigin: "50%",
-          x: 30,
-          y: 30,
-        },
-        {
-          duration: 50,
-          rotation: 360,
-          ease: "none",
-        }
-      );
+    gsap.timeline({ repeat: -1 }).set("#svg-stage", { opacity: 1 }).fromTo(
+      "#clover",
+      {
+        transformOrigin: "50%",
+        x: 30,
+        y: 30,
+      },
+      {
+        duration: 50,
+        rotation: 360,
+        ease: "none",
+      }
+    );
 
     Draggable.create("#svg-stage", {
       type: "x,y", // enable drag in X, Y, and rotation
@@ -161,6 +158,7 @@ const Menu = () => {
 
         <div id="svg-stage" className="cocktail">
           <img
+            id="hero-lightpass"
             src={currentCocktail.image}
             className="object-contain"
             alt={currentCocktail.name}
